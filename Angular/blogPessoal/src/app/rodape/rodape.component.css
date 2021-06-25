@@ -1,0 +1,12 @@
+ul.social-netwhork{
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+
+ul.social-netwhork li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+    
+}
