@@ -6,6 +6,7 @@ import { UserLogin } from '../model/UserLogin';
 import { AuthService } from '../service/auth.service';
 
 
+
 @Component({
   selector: 'app-entrar',
   templateUrl: './entrar.component.html',
@@ -16,7 +17,7 @@ export class EntrarComponent implements OnInit {
 
 
   constructor(
-    private authService: AuthService,
+    private auth: AuthService,
     private router: Router
   ) { }
 
@@ -25,7 +26,7 @@ export class EntrarComponent implements OnInit {
     
   }
   entrar() {
-    this.authService.entrar(this.userLogin).subscribe((resp: UserLogin) => {
+    this.auth.entrar(this.userLogin).subscribe((resp: UserLogin) => {
       this.userLogin = resp
 
       environment.token = this.userLogin.token
@@ -33,11 +34,10 @@ export class EntrarComponent implements OnInit {
       environment.foto = this.userLogin.foto
       environment.id = this.userLogin.id
 
-      console.log(environment.token)
-      console.log(environment.nome)
-      console.log(environment.foto)
-      console.log(environment.id)
+      this.userLogin.foto
 
+      this.router.navigate(['/inicio'])
+      
       this.router.navigate(["/inicio"])
     }, erro => {
       if(erro.status == 500 || 401) {
