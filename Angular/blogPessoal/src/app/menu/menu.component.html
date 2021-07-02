@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <div class="container-fluid">
-        <img src="https://scontent.fcgh9-1.fna.fbcdn.net/v/t1.6435-9/169006937_2995753023994159_7976230229403366134_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=174925&_nc_ohc=fjYp1gPgAGcAX_Nc8eT&_nc_ht=scontent.fcgh9-1.fna&oh=a7d321dcf8eea2875a12ed10d8221568&oe=60D9E4CD"
-            alt="" width="50px" height="50px" class="rounded-circle">
+        <img src="{{foto}}"
+            alt="Imagem do usuário" width="50px" height="50px" class="rounded-circle">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse px-2" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-lg-0 ">
                 <li class="nav-item pl-3">
-                    <p class="text-white fs-16 fw-bold m-0">Jose Luis</p>
+                    <p class="text-white fs-16 fw-bold m-0">Olá, {{nome}}</p>
                     <a href="">
                     <p class="text-white fs-16 fw-bold">Editar</p>
                     </a>
@@ -24,8 +24,8 @@
 
             <ul class="navbar-nav ml-auto mb-lg-0 ">
                 <li class="nav-item pl-3">
-                    <a href="">
-                    <p class="text-white fs-16 fw-bold">Sair</p>
+                    <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16">
+                    Sair
                     </a>
                 </li>
             </ul>
@@ -33,6 +33,9 @@
         </div>
     </div>
 </nav>
+
+
+
 
 
 
