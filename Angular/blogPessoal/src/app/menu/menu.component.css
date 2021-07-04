@@ -5,3 +5,11 @@
 a{
     cursor: pointer;
 }
+
+.navbar1 {
+    background-image: linear-gradient(rgb(62, 62, 165),rgb(59, 42, 131),rgb(97, 97, 99));
+  }
+
+  .fundo1{
+    background-image:rgb(62, 62, 165)
+  }
