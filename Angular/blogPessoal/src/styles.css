@@ -11,5 +11,16 @@ html{
     font-size: 18pt;
 }
 
+#gradien {
+    background: rgb(4, 129, 35); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgb(5, 116, 2)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(255,0,0,0),rgb(4, 150, 48)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(255,0,0,0),rgb(4, 145, 34)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(255,0,0,0), rgb(5, 160, 64)); /*Standard*/
+  }
+
+
+  
+
 
 
